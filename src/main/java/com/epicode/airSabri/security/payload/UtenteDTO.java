@@ -18,5 +18,4 @@ public class UtenteDTO {
 	    private String cognome;
 	    private String userName;
 	    private String email;
-	    private String contactPhone;
 }

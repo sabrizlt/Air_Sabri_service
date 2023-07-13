@@ -25,4 +25,5 @@ public class BigliettoDTO {
 	    private String arrivo;
 	    private EBagagli bagagli;
 	    private String numeroBiglietto;
+	    private String numeroPosto; 
 }

@@ -2,6 +2,10 @@ package com.epicode.airSabri.security.payload;
 
 import java.util.Set;
 
+import com.epicode.airSabri.enumerated.EBagagli;
+import com.epicode.airSabri.models.MyUser;
+
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -13,11 +17,8 @@ import lombok.ToString;
 @ToString
 @NoArgsConstructor
 @AllArgsConstructor
-public class RegisterDto {
-    private String nome;
-    private String cognome;
-    private String userName;
-    private String email;
-    private String password;
-    private Set<String> roles;
+public class AereoDTO {
+	    private String nome_aereo;
+	    private Double prezzo;
+	   
 }

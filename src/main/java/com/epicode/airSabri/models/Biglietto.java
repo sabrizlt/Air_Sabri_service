@@ -6,6 +6,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import com.epicode.airSabri.enumerated.EBagagli;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -27,6 +29,7 @@ import jakarta.persistence.Table;
 @Builder
 public class Biglietto {
 	
+	@JsonIgnore
 	@ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "user_id")
     private MyUser user;
@@ -45,6 +48,7 @@ public class Biglietto {
     private EBagagli bagagli;
     @Column(nullable = false)
     private String numeroBiglietto;
-
+    @Column(nullable = false)
+    private String numeroPosto;
 }
 

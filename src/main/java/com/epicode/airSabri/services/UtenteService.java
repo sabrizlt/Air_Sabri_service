@@ -28,7 +28,6 @@ public class UtenteService {
     	}
     	MyUser u = utenteDAO.findById(user_id).get();
         u.setCognome(user.getCognome());
-        u.setContactPhone(user.getContactPhone());
         u.setEmail(user.getEmail());
         u.setNome(user.getNome());
       return  utenteDAO.saveAndFlush(u);
